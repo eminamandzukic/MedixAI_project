@@ -1,0 +1,851 @@
+{
+  "metadata": {
+    "dataset": "Pima Indians Diabetes Database",
+    "source_url": "https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.data.csv",
+    "local_path": "/Users/rafiabdurrahman/Documents/University/lfd/project/data/pima_indians_diabetes.csv",
+    "n_samples_total": 768,
+    "n_features": 8,
+    "feature_names": [
+      "Pregnancies",
+      "Glucose",
+      "BloodPressure",
+      "SkinThickness",
+      "Insulin",
+      "BMI",
+      "DiabetesPedigreeFunction",
+      "Age"
+    ],
+    "positive_class_ratio": 0.3489583333333333,
+    "seed": 42,
+    "train_size": 460,
+    "mi_ranking_note": "Mutual Information scores computed by sklearn.feature_selection.mutual_info_classif on the training split (60% of data, seed=42).",
+    "mrmr_note": "mRMR top-k uses a greedy MID variant: at each step the feature maximising MI(f,y) \u2212 mean MI(f,S) is selected, where S is the set of already-selected features.",
+    "family_b_k_values": [
+      3,
+      5,
+      10,
+      15
+    ],
+    "missing_value_handling": "Biologically-invalid zeros in Glucose, BloodPressure, SkinThickness, Insulin, BMI replaced with NaN, then median-imputed using training split only."
+  },
+  "global_mi_ranking": [
+    {
+      "rank": 1,
+      "feature": "Age",
+      "mi_score": 0.09913351526800751
+    },
+    {
+      "rank": 2,
+      "feature": "Glucose",
+      "mi_score": 0.09415497036686182
+    },
+    {
+      "rank": 3,
+      "feature": "BMI",
+      "mi_score": 0.06570481831224617
+    },
+    {
+      "rank": 4,
+      "feature": "Insulin",
+      "mi_score": 0.04306260137954232
+    },
+    {
+      "rank": 5,
+      "feature": "SkinThickness",
+      "mi_score": 0.030389416715009165
+    },
+    {
+      "rank": 6,
+      "feature": "Pregnancies",
+      "mi_score": 0.026483387120487256
+    },
+    {
+      "rank": 7,
+      "feature": "BloodPressure",
+      "mi_score": 0.012393088521300832
+    },
+    {
+      "rank": 8,
+      "feature": "DiabetesPedigreeFunction",
+      "mi_score": 0.0
+    }
+  ],
+  "feature_subsets": {
+    "all_features": {
+      "family": "A",
+      "description": "All 8 features \u2014 maximum-information baseline.",
+      "features": [
+        "Pregnancies",
+        "Glucose",
+        "BloodPressure",
+        "SkinThickness",
+        "Insulin",
+        "BMI",
+        "DiabetesPedigreeFunction",
+        "Age"
+      ],
+      "n_features": 8,
+      "mi_scores": {
+        "Pregnancies": 0.026483387120487256,
+        "Glucose": 0.09415497036686182,
+        "BloodPressure": 0.012393088521300832,
+        "SkinThickness": 0.030389416715009165,
+        "Insulin": 0.04306260137954232,
+        "BMI": 0.06570481831224617,
+        "DiabetesPedigreeFunction": 0.0,
+        "Age": 0.09913351526800751
+      },
+      "selection_method": "none (baseline)"
+    },
+    "top_3_mi": {
+      "family": "B",
+      "description": "Top-3 features by Mutual Information (computed on training split, seed=42).",
+      "features": [
+        "Age",
+        "Glucose",
+        "BMI"
+      ],
+      "n_features": 3,
+      "mi_scores": {
+        "Age": 0.09913351526800751,
+        "Glucose": 0.09415497036686182,
+        "BMI": 0.06570481831224617
+      },
+      "selection_method": "mutual_information",
+      "k": 3,
+      "ranking": [
+        {
+          "rank": 1,
+          "feature": "Age",
+          "mi_score": 0.09913351526800751
+        },
+        {
+          "rank": 2,
+          "feature": "Glucose",
+          "mi_score": 0.09415497036686182
+        },
+        {
+          "rank": 3,
+          "feature": "BMI",
+          "mi_score": 0.06570481831224617
+        }
+      ]
+    },
+    "top_3_mrmr": {
+      "family": "B",
+      "description": "Top-3 features by mRMR (Minimum Redundancy Maximum Relevance, greedy MID variant, training split, seed=42).",
+      "features": [
+        "Glucose",
+        "BMI",
+        "Pregnancies"
+      ],
+      "n_features": 3,
+      "mi_scores": {
+        "Glucose": 0.09415497036686182,
+        "BMI": 0.06570481831224617,
+        "Pregnancies": 0.026483387120487256
+      },
+      "selection_method": "mrmr",
+      "k": 3,
+      "ranking": [
+        {
+          "rank": 1,
+          "feature": "Glucose",
+          "mi_score": 0.09415497036686182
+        },
+        {
+          "rank": 2,
+          "feature": "BMI",
+          "mi_score": 0.06570481831224617
+        },
+        {
+          "rank": 3,
+          "feature": "Pregnancies",
+          "mi_score": 0.026483387120487256
+        }
+      ]
+    },
+    "top_5_mi": {
+      "family": "B",
+      "description": "Top-5 features by Mutual Information (computed on training split, seed=42).",
+      "features": [
+        "Age",
+        "Glucose",
+        "BMI",
+        "Insulin",
+        "SkinThickness"
+      ],
+      "n_features": 5,
+      "mi_scores": {
+        "Age": 0.09913351526800751,
+        "Glucose": 0.09415497036686182,
+        "BMI": 0.06570481831224617,
+        "Insulin": 0.04306260137954232,
+        "SkinThickness": 0.030389416715009165
+      },
+      "selection_method": "mutual_information",
+      "k": 5,
+      "ranking": [
+        {
+          "rank": 1,
+          "feature": "Age",
+          "mi_score": 0.09913351526800751
+        },
+        {
+          "rank": 2,
+          "feature": "Glucose",
+          "mi_score": 0.09415497036686182
+        },
+        {
+          "rank": 3,
+          "feature": "BMI",
+          "mi_score": 0.06570481831224617
+        },
+        {
+          "rank": 4,
+          "feature": "Insulin",
+          "mi_score": 0.04306260137954232
+        },
+        {
+          "rank": 5,
+          "feature": "SkinThickness",
+          "mi_score": 0.030389416715009165
+        }
+      ]
+    },
+    "top_5_mrmr": {
+      "family": "B",
+      "description": "Top-5 features by mRMR (Minimum Redundancy Maximum Relevance, greedy MID variant, training split, seed=42).",
+      "features": [
+        "Glucose",
+        "BMI",
+        "Pregnancies",
+        "Insulin",
+        "Age"
+      ],
+      "n_features": 5,
+      "mi_scores": {
+        "Glucose": 0.09415497036686182,
+        "BMI": 0.06570481831224617,
+        "Pregnancies": 0.026483387120487256,
+        "Insulin": 0.04306260137954232,
+        "Age": 0.09913351526800751
+      },
+      "selection_method": "mrmr",
+      "k": 5,
+      "ranking": [
+        {
+          "rank": 1,
+          "feature": "Glucose",
+          "mi_score": 0.09415497036686182
+        },
+        {
+          "rank": 2,
+          "feature": "BMI",
+          "mi_score": 0.06570481831224617
+        },
+        {
+          "rank": 3,
+          "feature": "Pregnancies",
+          "mi_score": 0.026483387120487256
+        },
+        {
+          "rank": 4,
+          "feature": "Insulin",
+          "mi_score": 0.04306260137954232
+        },
+        {
+          "rank": 5,
+          "feature": "Age",
+          "mi_score": 0.09913351526800751
+        }
+      ]
+    },
+    "corr_filtered_08": {
+      "family": "C",
+      "description": "Correlation-filtered at |r|>0.8. Within each high-corr pair the feature with lower MI is dropped.",
+      "features": [
+        "Pregnancies",
+        "Glucose",
+        "BloodPressure",
+        "SkinThickness",
+        "Insulin",
+        "BMI",
+        "DiabetesPedigreeFunction",
+        "Age"
+      ],
+      "n_features": 8,
+      "dropped_features": [],
+      "threshold": 0.8,
+      "mi_scores": {
+        "Pregnancies": 0.026483387120487256,
+        "Glucose": 0.09415497036686182,
+        "BloodPressure": 0.012393088521300832,
+        "SkinThickness": 0.030389416715009165,
+        "Insulin": 0.04306260137954232,
+        "BMI": 0.06570481831224617,
+        "DiabetesPedigreeFunction": 0.0,
+        "Age": 0.09913351526800751
+      },
+      "selection_method": "correlation_filter"
+    },
+    "corr_filtered_09": {
+      "family": "C",
+      "description": "Correlation-filtered at |r|>0.9. Within each high-corr pair the feature with lower MI is dropped.",
+      "features": [
+        "Pregnancies",
+        "Glucose",
+        "BloodPressure",
+        "SkinThickness",
+        "Insulin",
+        "BMI",
+        "DiabetesPedigreeFunction",
+        "Age"
+      ],
+      "n_features": 8,
+      "dropped_features": [],
+      "threshold": 0.9,
+      "mi_scores": {
+        "Pregnancies": 0.026483387120487256,
+        "Glucose": 0.09415497036686182,
+        "BloodPressure": 0.012393088521300832,
+        "SkinThickness": 0.030389416715009165,
+        "Insulin": 0.04306260137954232,
+        "BMI": 0.06570481831224617,
+        "DiabetesPedigreeFunction": 0.0,
+        "Age": 0.09913351526800751
+      },
+      "selection_method": "correlation_filter"
+    },
+    "corr_filtered_095": {
+      "family": "C",
+      "description": "Correlation-filtered at |r|>0.95. Within each high-corr pair the feature with lower MI is dropped.",
+      "features": [
+        "Pregnancies",
+        "Glucose",
+        "BloodPressure",
+        "SkinThickness",
+        "Insulin",
+        "BMI",
+        "DiabetesPedigreeFunction",
+        "Age"
+      ],
+      "n_features": 8,
+      "dropped_features": [],
+      "threshold": 0.95,
+      "mi_scores": {
+        "Pregnancies": 0.026483387120487256,
+        "Glucose": 0.09415497036686182,
+        "BloodPressure": 0.012393088521300832,
+        "SkinThickness": 0.030389416715009165,
+        "Insulin": 0.04306260137954232,
+        "BMI": 0.06570481831224617,
+        "DiabetesPedigreeFunction": 0.0,
+        "Age": 0.09913351526800751
+      },
+      "selection_method": "correlation_filter"
+    },
+    "domain_metabolic": {
+      "family": "D",
+      "description": "Metabolic markers: Glucose, Insulin, BMI.",
+      "features": [
+        "Glucose",
+        "Insulin",
+        "BMI"
+      ],
+      "n_features": 3,
+      "mi_scores": {
+        "Glucose": 0.09415497036686182,
+        "Insulin": 0.04306260137954232,
+        "BMI": 0.06570481831224617
+      },
+      "selection_method": "domain_knowledge"
+    },
+    "domain_cardiovascular": {
+      "family": "D",
+      "description": "Cardiovascular/ageing proxies: BloodPressure, Age.",
+      "features": [
+        "BloodPressure",
+        "Age"
+      ],
+      "n_features": 2,
+      "mi_scores": {
+        "BloodPressure": 0.012393088521300832,
+        "Age": 0.09913351526800751
+      },
+      "selection_method": "domain_knowledge"
+    },
+    "domain_demographic_pregnancy": {
+      "family": "D",
+      "description": "Demographic/pregnancy history: Pregnancies, Age.",
+      "features": [
+        "Pregnancies",
+        "Age"
+      ],
+      "n_features": 2,
+      "mi_scores": {
+        "Pregnancies": 0.026483387120487256,
+        "Age": 0.09913351526800751
+      },
+      "selection_method": "domain_knowledge"
+    },
+    "domain_skin_body_composition": {
+      "family": "D",
+      "description": "Skin/body composition: SkinThickness, BMI.",
+      "features": [
+        "SkinThickness",
+        "BMI"
+      ],
+      "n_features": 2,
+      "mi_scores": {
+        "SkinThickness": 0.030389416715009165,
+        "BMI": 0.06570481831224617
+      },
+      "selection_method": "domain_knowledge"
+    },
+    "domain_genetic_risk_proxy": {
+      "family": "D",
+      "description": "Genetic risk proxy: DiabetesPedigreeFunction, Age.",
+      "features": [
+        "DiabetesPedigreeFunction",
+        "Age"
+      ],
+      "n_features": 2,
+      "mi_scores": {
+        "DiabetesPedigreeFunction": 0.0,
+        "Age": 0.09913351526800751
+      },
+      "selection_method": "domain_knowledge"
+    },
+    "domain_metabolic_plus_risk": {
+      "family": "D",
+      "description": "Combined metabolic + genetic risk.",
+      "features": [
+        "Glucose",
+        "Insulin",
+        "BMI",
+        "DiabetesPedigreeFunction",
+        "Age"
+      ],
+      "n_features": 5,
+      "mi_scores": {
+        "Glucose": 0.09415497036686182,
+        "Insulin": 0.04306260137954232,
+        "BMI": 0.06570481831224617,
+        "DiabetesPedigreeFunction": 0.0,
+        "Age": 0.09913351526800751
+      },
+      "selection_method": "domain_knowledge"
+    },
+    "random_k3_00": {
+      "family": "E",
+      "description": "Random subset #1 of size 3 (control group, seed=45, draw=0).",
+      "features": [
+        "DiabetesPedigreeFunction",
+        "Insulin",
+        "SkinThickness"
+      ],
+      "n_features": 3,
+      "mi_scores": {
+        "DiabetesPedigreeFunction": 0.0,
+        "Insulin": 0.04306260137954232,
+        "SkinThickness": 0.030389416715009165
+      },
+      "selection_method": "random",
+      "k": 3,
+      "draw_index": 0
+    },
+    "random_k3_01": {
+      "family": "E",
+      "description": "Random subset #2 of size 3 (control group, seed=45, draw=1).",
+      "features": [
+        "BloodPressure",
+        "Insulin",
+        "Pregnancies"
+      ],
+      "n_features": 3,
+      "mi_scores": {
+        "BloodPressure": 0.012393088521300832,
+        "Insulin": 0.04306260137954232,
+        "Pregnancies": 0.026483387120487256
+      },
+      "selection_method": "random",
+      "k": 3,
+      "draw_index": 1
+    },
+    "random_k3_02": {
+      "family": "E",
+      "description": "Random subset #3 of size 3 (control group, seed=45, draw=2).",
+      "features": [
+        "BMI",
+        "DiabetesPedigreeFunction",
+        "Pregnancies"
+      ],
+      "n_features": 3,
+      "mi_scores": {
+        "BMI": 0.06570481831224617,
+        "DiabetesPedigreeFunction": 0.0,
+        "Pregnancies": 0.026483387120487256
+      },
+      "selection_method": "random",
+      "k": 3,
+      "draw_index": 2
+    },
+    "random_k3_03": {
+      "family": "E",
+      "description": "Random subset #4 of size 3 (control group, seed=45, draw=3).",
+      "features": [
+        "Age",
+        "DiabetesPedigreeFunction",
+        "Pregnancies"
+      ],
+      "n_features": 3,
+      "mi_scores": {
+        "Age": 0.09913351526800751,
+        "DiabetesPedigreeFunction": 0.0,
+        "Pregnancies": 0.026483387120487256
+      },
+      "selection_method": "random",
+      "k": 3,
+      "draw_index": 3
+    },
+    "random_k3_04": {
+      "family": "E",
+      "description": "Random subset #5 of size 3 (control group, seed=45, draw=4).",
+      "features": [
+        "DiabetesPedigreeFunction",
+        "Insulin",
+        "Pregnancies"
+      ],
+      "n_features": 3,
+      "mi_scores": {
+        "DiabetesPedigreeFunction": 0.0,
+        "Insulin": 0.04306260137954232,
+        "Pregnancies": 0.026483387120487256
+      },
+      "selection_method": "random",
+      "k": 3,
+      "draw_index": 4
+    },
+    "random_k3_05": {
+      "family": "E",
+      "description": "Random subset #6 of size 3 (control group, seed=45, draw=5).",
+      "features": [
+        "BMI",
+        "DiabetesPedigreeFunction",
+        "Insulin"
+      ],
+      "n_features": 3,
+      "mi_scores": {
+        "BMI": 0.06570481831224617,
+        "DiabetesPedigreeFunction": 0.0,
+        "Insulin": 0.04306260137954232
+      },
+      "selection_method": "random",
+      "k": 3,
+      "draw_index": 5
+    },
+    "random_k3_06": {
+      "family": "E",
+      "description": "Random subset #7 of size 3 (control group, seed=45, draw=6).",
+      "features": [
+        "Age",
+        "Insulin",
+        "Pregnancies"
+      ],
+      "n_features": 3,
+      "mi_scores": {
+        "Age": 0.09913351526800751,
+        "Insulin": 0.04306260137954232,
+        "Pregnancies": 0.026483387120487256
+      },
+      "selection_method": "random",
+      "k": 3,
+      "draw_index": 6
+    },
+    "random_k3_07": {
+      "family": "E",
+      "description": "Random subset #8 of size 3 (control group, seed=45, draw=7).",
+      "features": [
+        "Age",
+        "BMI",
+        "BloodPressure"
+      ],
+      "n_features": 3,
+      "mi_scores": {
+        "Age": 0.09913351526800751,
+        "BMI": 0.06570481831224617,
+        "BloodPressure": 0.012393088521300832
+      },
+      "selection_method": "random",
+      "k": 3,
+      "draw_index": 7
+    },
+    "random_k3_08": {
+      "family": "E",
+      "description": "Random subset #9 of size 3 (control group, seed=45, draw=8).",
+      "features": [
+        "BMI",
+        "BloodPressure",
+        "Glucose"
+      ],
+      "n_features": 3,
+      "mi_scores": {
+        "BMI": 0.06570481831224617,
+        "BloodPressure": 0.012393088521300832,
+        "Glucose": 0.09415497036686182
+      },
+      "selection_method": "random",
+      "k": 3,
+      "draw_index": 8
+    },
+    "random_k3_09": {
+      "family": "E",
+      "description": "Random subset #10 of size 3 (control group, seed=45, draw=9).",
+      "features": [
+        "DiabetesPedigreeFunction",
+        "Insulin",
+        "Pregnancies"
+      ],
+      "n_features": 3,
+      "mi_scores": {
+        "DiabetesPedigreeFunction": 0.0,
+        "Insulin": 0.04306260137954232,
+        "Pregnancies": 0.026483387120487256
+      },
+      "selection_method": "random",
+      "k": 3,
+      "draw_index": 9
+    },
+    "random_k5_00": {
+      "family": "E",
+      "description": "Random subset #1 of size 5 (control group, seed=47, draw=0).",
+      "features": [
+        "Age",
+        "BMI",
+        "Insulin",
+        "Pregnancies",
+        "SkinThickness"
+      ],
+      "n_features": 5,
+      "mi_scores": {
+        "Age": 0.09913351526800751,
+        "BMI": 0.06570481831224617,
+        "Insulin": 0.04306260137954232,
+        "Pregnancies": 0.026483387120487256,
+        "SkinThickness": 0.030389416715009165
+      },
+      "selection_method": "random",
+      "k": 5,
+      "draw_index": 0
+    },
+    "random_k5_01": {
+      "family": "E",
+      "description": "Random subset #2 of size 5 (control group, seed=47, draw=1).",
+      "features": [
+        "Age",
+        "BMI",
+        "BloodPressure",
+        "Insulin",
+        "SkinThickness"
+      ],
+      "n_features": 5,
+      "mi_scores": {
+        "Age": 0.09913351526800751,
+        "BMI": 0.06570481831224617,
+        "BloodPressure": 0.012393088521300832,
+        "Insulin": 0.04306260137954232,
+        "SkinThickness": 0.030389416715009165
+      },
+      "selection_method": "random",
+      "k": 5,
+      "draw_index": 1
+    },
+    "random_k5_02": {
+      "family": "E",
+      "description": "Random subset #3 of size 5 (control group, seed=47, draw=2).",
+      "features": [
+        "Age",
+        "DiabetesPedigreeFunction",
+        "Insulin",
+        "Pregnancies",
+        "SkinThickness"
+      ],
+      "n_features": 5,
+      "mi_scores": {
+        "Age": 0.09913351526800751,
+        "DiabetesPedigreeFunction": 0.0,
+        "Insulin": 0.04306260137954232,
+        "Pregnancies": 0.026483387120487256,
+        "SkinThickness": 0.030389416715009165
+      },
+      "selection_method": "random",
+      "k": 5,
+      "draw_index": 2
+    },
+    "random_k5_03": {
+      "family": "E",
+      "description": "Random subset #4 of size 5 (control group, seed=47, draw=3).",
+      "features": [
+        "Age",
+        "BloodPressure",
+        "Insulin",
+        "Pregnancies",
+        "SkinThickness"
+      ],
+      "n_features": 5,
+      "mi_scores": {
+        "Age": 0.09913351526800751,
+        "BloodPressure": 0.012393088521300832,
+        "Insulin": 0.04306260137954232,
+        "Pregnancies": 0.026483387120487256,
+        "SkinThickness": 0.030389416715009165
+      },
+      "selection_method": "random",
+      "k": 5,
+      "draw_index": 3
+    },
+    "random_k5_04": {
+      "family": "E",
+      "description": "Random subset #5 of size 5 (control group, seed=47, draw=4).",
+      "features": [
+        "BMI",
+        "DiabetesPedigreeFunction",
+        "Glucose",
+        "Insulin",
+        "SkinThickness"
+      ],
+      "n_features": 5,
+      "mi_scores": {
+        "BMI": 0.06570481831224617,
+        "DiabetesPedigreeFunction": 0.0,
+        "Glucose": 0.09415497036686182,
+        "Insulin": 0.04306260137954232,
+        "SkinThickness": 0.030389416715009165
+      },
+      "selection_method": "random",
+      "k": 5,
+      "draw_index": 4
+    },
+    "random_k5_05": {
+      "family": "E",
+      "description": "Random subset #6 of size 5 (control group, seed=47, draw=5).",
+      "features": [
+        "BMI",
+        "BloodPressure",
+        "Glucose",
+        "Pregnancies",
+        "SkinThickness"
+      ],
+      "n_features": 5,
+      "mi_scores": {
+        "BMI": 0.06570481831224617,
+        "BloodPressure": 0.012393088521300832,
+        "Glucose": 0.09415497036686182,
+        "Pregnancies": 0.026483387120487256,
+        "SkinThickness": 0.030389416715009165
+      },
+      "selection_method": "random",
+      "k": 5,
+      "draw_index": 5
+    },
+    "random_k5_06": {
+      "family": "E",
+      "description": "Random subset #7 of size 5 (control group, seed=47, draw=6).",
+      "features": [
+        "BMI",
+        "BloodPressure",
+        "DiabetesPedigreeFunction",
+        "Glucose",
+        "Insulin"
+      ],
+      "n_features": 5,
+      "mi_scores": {
+        "BMI": 0.06570481831224617,
+        "BloodPressure": 0.012393088521300832,
+        "DiabetesPedigreeFunction": 0.0,
+        "Glucose": 0.09415497036686182,
+        "Insulin": 0.04306260137954232
+      },
+      "selection_method": "random",
+      "k": 5,
+      "draw_index": 6
+    },
+    "random_k5_07": {
+      "family": "E",
+      "description": "Random subset #8 of size 5 (control group, seed=47, draw=7).",
+      "features": [
+        "BMI",
+        "DiabetesPedigreeFunction",
+        "Glucose",
+        "Pregnancies",
+        "SkinThickness"
+      ],
+      "n_features": 5,
+      "mi_scores": {
+        "BMI": 0.06570481831224617,
+        "DiabetesPedigreeFunction": 0.0,
+        "Glucose": 0.09415497036686182,
+        "Pregnancies": 0.026483387120487256,
+        "SkinThickness": 0.030389416715009165
+      },
+      "selection_method": "random",
+      "k": 5,
+      "draw_index": 7
+    },
+    "random_k5_08": {
+      "family": "E",
+      "description": "Random subset #9 of size 5 (control group, seed=47, draw=8).",
+      "features": [
+        "BMI",
+        "BloodPressure",
+        "Insulin",
+        "Pregnancies",
+        "SkinThickness"
+      ],
+      "n_features": 5,
+      "mi_scores": {
+        "BMI": 0.06570481831224617,
+        "BloodPressure": 0.012393088521300832,
+        "Insulin": 0.04306260137954232,
+        "Pregnancies": 0.026483387120487256,
+        "SkinThickness": 0.030389416715009165
+      },
+      "selection_method": "random",
+      "k": 5,
+      "draw_index": 8
+    },
+    "random_k5_09": {
+      "family": "E",
+      "description": "Random subset #10 of size 5 (control group, seed=47, draw=9).",
+      "features": [
+        "BMI",
+        "BloodPressure",
+        "Glucose",
+        "Insulin",
+        "Pregnancies"
+      ],
+      "n_features": 5,
+      "mi_scores": {
+        "BMI": 0.06570481831224617,
+        "BloodPressure": 0.012393088521300832,
+        "Glucose": 0.09415497036686182,
+        "Insulin": 0.04306260137954232,
+        "Pregnancies": 0.026483387120487256
+      },
+      "selection_method": "random",
+      "k": 5,
+      "draw_index": 9
+    }
+  },
+  "summary": {
+    "total_subsets": 34,
+    "family_counts": {
+      "A": 1,
+      "B": 4,
+      "C": 3,
+      "D": 6,
+      "E": 20
+    }
+  }
+}

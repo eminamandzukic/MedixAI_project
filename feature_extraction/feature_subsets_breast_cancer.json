@@ -1,0 +1,2303 @@
+{
+  "metadata": {
+    "dataset": "Breast Cancer Wisconsin Diagnostic",
+    "source_url": "https://scikit-learn.org/stable/datasets/toy_dataset.html#breast-cancer-dataset",
+    "local_path": "/Users/rafiabdurrahman/Documents/University/lfd/project/data/breast_cancer_wisconsin.csv",
+    "n_samples_total": 569,
+    "n_features": 30,
+    "feature_names": [
+      "mean radius",
+      "mean texture",
+      "mean perimeter",
+      "mean area",
+      "mean smoothness",
+      "mean compactness",
+      "mean concavity",
+      "mean concave points",
+      "mean symmetry",
+      "mean fractal dimension",
+      "radius error",
+      "texture error",
+      "perimeter error",
+      "area error",
+      "smoothness error",
+      "compactness error",
+      "concavity error",
+      "concave points error",
+      "symmetry error",
+      "fractal dimension error",
+      "worst radius",
+      "worst texture",
+      "worst perimeter",
+      "worst area",
+      "worst smoothness",
+      "worst compactness",
+      "worst concavity",
+      "worst concave points",
+      "worst symmetry",
+      "worst fractal dimension"
+    ],
+    "positive_class_ratio": 0.6274165202108963,
+    "seed": 42,
+    "train_size": 341,
+    "mi_ranking_note": "Mutual Information scores computed by sklearn.feature_selection.mutual_info_classif on the training split (60% of data, seed=42).",
+    "mrmr_note": "mRMR top-k uses a greedy MID variant: at each step the feature maximising MI(f,y) \u2212 mean MI(f,S) is selected, where S is the set of already-selected features.",
+    "family_b_k_values": [
+      3,
+      5,
+      10,
+      15
+    ]
+  },
+  "global_mi_ranking": [
+    {
+      "rank": 1,
+      "feature": "worst perimeter",
+      "mi_score": 0.47997338362123587
+    },
+    {
+      "rank": 2,
+      "feature": "worst radius",
+      "mi_score": 0.45878246971739545
+    },
+    {
+      "rank": 3,
+      "feature": "worst area",
+      "mi_score": 0.4481099341464092
+    },
+    {
+      "rank": 4,
+      "feature": "mean concave points",
+      "mi_score": 0.4400315674561879
+    },
+    {
+      "rank": 5,
+      "feature": "worst concave points",
+      "mi_score": 0.4391958155536113
+    },
+    {
+      "rank": 6,
+      "feature": "mean perimeter",
+      "mi_score": 0.405954889554736
+    },
+    {
+      "rank": 7,
+      "feature": "mean area",
+      "mi_score": 0.3712806734643561
+    },
+    {
+      "rank": 8,
+      "feature": "mean concavity",
+      "mi_score": 0.3697352498485529
+    },
+    {
+      "rank": 9,
+      "feature": "mean radius",
+      "mi_score": 0.3688082609253027
+    },
+    {
+      "rank": 10,
+      "feature": "worst concavity",
+      "mi_score": 0.33950537704199113
+    },
+    {
+      "rank": 11,
+      "feature": "area error",
+      "mi_score": 0.33628407674980854
+    },
+    {
+      "rank": 12,
+      "feature": "worst compactness",
+      "mi_score": 0.25975186546642615
+    },
+    {
+      "rank": 13,
+      "feature": "mean compactness",
+      "mi_score": 0.22934198348537382
+    },
+    {
+      "rank": 14,
+      "feature": "radius error",
+      "mi_score": 0.22674437001756487
+    },
+    {
+      "rank": 15,
+      "feature": "perimeter error",
+      "mi_score": 0.21192846235935092
+    },
+    {
+      "rank": 16,
+      "feature": "concavity error",
+      "mi_score": 0.17416473838632784
+    },
+    {
+      "rank": 17,
+      "feature": "worst texture",
+      "mi_score": 0.13040466592213407
+    },
+    {
+      "rank": 18,
+      "feature": "worst symmetry",
+      "mi_score": 0.10913448956688954
+    },
+    {
+      "rank": 19,
+      "feature": "concave points error",
+      "mi_score": 0.09747548532982231
+    },
+    {
+      "rank": 20,
+      "feature": "mean smoothness",
+      "mi_score": 0.08692892392558771
+    },
+    {
+      "rank": 21,
+      "feature": "mean texture",
+      "mi_score": 0.0793869112482597
+    },
+    {
+      "rank": 22,
+      "feature": "compactness error",
+      "mi_score": 0.0682435734074629
+    },
+    {
+      "rank": 23,
+      "feature": "worst fractal dimension",
+      "mi_score": 0.06687093920440312
+    },
+    {
+      "rank": 24,
+      "feature": "worst smoothness",
+      "mi_score": 0.06191709153171998
+    },
+    {
+      "rank": 25,
+      "feature": "texture error",
+      "mi_score": 0.05865496438833806
+    },
+    {
+      "rank": 26,
+      "feature": "mean symmetry",
+      "mi_score": 0.04713496764711689
+    },
+    {
+      "rank": 27,
+      "feature": "smoothness error",
+      "mi_score": 0.028634483862289173
+    },
+    {
+      "rank": 28,
+      "feature": "symmetry error",
+      "mi_score": 0.026021227630826482
+    },
+    {
+      "rank": 29,
+      "feature": "fractal dimension error",
+      "mi_score": 0.010237881482340283
+    },
+    {
+      "rank": 30,
+      "feature": "mean fractal dimension",
+      "mi_score": 0.0
+    }
+  ],
+  "feature_subsets": {
+    "all_features": {
+      "family": "A",
+      "description": "All 30 features \u2014 maximum-information baseline.",
+      "features": [
+        "mean radius",
+        "mean texture",
+        "mean perimeter",
+        "mean area",
+        "mean smoothness",
+        "mean compactness",
+        "mean concavity",
+        "mean concave points",
+        "mean symmetry",
+        "mean fractal dimension",
+        "radius error",
+        "texture error",
+        "perimeter error",
+        "area error",
+        "smoothness error",
+        "compactness error",
+        "concavity error",
+        "concave points error",
+        "symmetry error",
+        "fractal dimension error",
+        "worst radius",
+        "worst texture",
+        "worst perimeter",
+        "worst area",
+        "worst smoothness",
+        "worst compactness",
+        "worst concavity",
+        "worst concave points",
+        "worst symmetry",
+        "worst fractal dimension"
+      ],
+      "n_features": 30,
+      "mi_scores": {
+        "mean radius": 0.3688082609253027,
+        "mean texture": 0.0793869112482597,
+        "mean perimeter": 0.405954889554736,
+        "mean area": 0.3712806734643561,
+        "mean smoothness": 0.08692892392558771,
+        "mean compactness": 0.22934198348537382,
+        "mean concavity": 0.3697352498485529,
+        "mean concave points": 0.4400315674561879,
+        "mean symmetry": 0.04713496764711689,
+        "mean fractal dimension": 0.0,
+        "radius error": 0.22674437001756487,
+        "texture error": 0.05865496438833806,
+        "perimeter error": 0.21192846235935092,
+        "area error": 0.33628407674980854,
+        "smoothness error": 0.028634483862289173,
+        "compactness error": 0.0682435734074629,
+        "concavity error": 0.17416473838632784,
+        "concave points error": 0.09747548532982231,
+        "symmetry error": 0.026021227630826482,
+        "fractal dimension error": 0.010237881482340283,
+        "worst radius": 0.45878246971739545,
+        "worst texture": 0.13040466592213407,
+        "worst perimeter": 0.47997338362123587,
+        "worst area": 0.4481099341464092,
+        "worst smoothness": 0.06191709153171998,
+        "worst compactness": 0.25975186546642615,
+        "worst concavity": 0.33950537704199113,
+        "worst concave points": 0.4391958155536113,
+        "worst symmetry": 0.10913448956688954,
+        "worst fractal dimension": 0.06687093920440312
+      },
+      "selection_method": "none (baseline)"
+    },
+    "top_3_mi": {
+      "family": "B",
+      "description": "Top-3 features by Mutual Information (computed on training split, seed=42).",
+      "features": [
+        "worst perimeter",
+        "worst radius",
+        "worst area"
+      ],
+      "n_features": 3,
+      "mi_scores": {
+        "worst perimeter": 0.47997338362123587,
+        "worst radius": 0.45878246971739545,
+        "worst area": 0.4481099341464092
+      },
+      "selection_method": "mutual_information",
+      "k": 3,
+      "ranking": [
+        {
+          "rank": 1,
+          "feature": "worst perimeter",
+          "mi_score": 0.47997338362123587
+        },
+        {
+          "rank": 2,
+          "feature": "worst radius",
+          "mi_score": 0.45878246971739545
+        },
+        {
+          "rank": 3,
+          "feature": "worst area",
+          "mi_score": 0.4481099341464092
+        }
+      ]
+    },
+    "top_3_mrmr": {
+      "family": "B",
+      "description": "Top-3 features by mRMR (Minimum Redundancy Maximum Relevance, greedy MID variant, training split, seed=42).",
+      "features": [
+        "worst concave points",
+        "worst perimeter",
+        "mean concave points"
+      ],
+      "n_features": 3,
+      "mi_scores": {
+        "worst concave points": 0.4391958155536113,
+        "worst perimeter": 0.47997338362123587,
+        "mean concave points": 0.4400315674561879
+      },
+      "selection_method": "mrmr",
+      "k": 3,
+      "ranking": [
+        {
+          "rank": 1,
+          "feature": "worst concave points",
+          "mi_score": 0.4391958155536113
+        },
+        {
+          "rank": 2,
+          "feature": "worst perimeter",
+          "mi_score": 0.47997338362123587
+        },
+        {
+          "rank": 3,
+          "feature": "mean concave points",
+          "mi_score": 0.4400315674561879
+        }
+      ]
+    },
+    "top_5_mi": {
+      "family": "B",
+      "description": "Top-5 features by Mutual Information (computed on training split, seed=42).",
+      "features": [
+        "worst perimeter",
+        "worst radius",
+        "worst area",
+        "mean concave points",
+        "worst concave points"
+      ],
+      "n_features": 5,
+      "mi_scores": {
+        "worst perimeter": 0.47997338362123587,
+        "worst radius": 0.45878246971739545,
+        "worst area": 0.4481099341464092,
+        "mean concave points": 0.4400315674561879,
+        "worst concave points": 0.4391958155536113
+      },
+      "selection_method": "mutual_information",
+      "k": 5,
+      "ranking": [
+        {
+          "rank": 1,
+          "feature": "worst perimeter",
+          "mi_score": 0.47997338362123587
+        },
+        {
+          "rank": 2,
+          "feature": "worst radius",
+          "mi_score": 0.45878246971739545
+        },
+        {
+          "rank": 3,
+          "feature": "worst area",
+          "mi_score": 0.4481099341464092
+        },
+        {
+          "rank": 4,
+          "feature": "mean concave points",
+          "mi_score": 0.4400315674561879
+        },
+        {
+          "rank": 5,
+          "feature": "worst concave points",
+          "mi_score": 0.4391958155536113
+        }
+      ]
+    },
+    "top_5_mrmr": {
+      "family": "B",
+      "description": "Top-5 features by mRMR (Minimum Redundancy Maximum Relevance, greedy MID variant, training split, seed=42).",
+      "features": [
+        "worst concave points",
+        "worst perimeter",
+        "mean concave points",
+        "worst radius",
+        "mean perimeter"
+      ],
+      "n_features": 5,
+      "mi_scores": {
+        "worst concave points": 0.4391958155536113,
+        "worst perimeter": 0.47997338362123587,
+        "mean concave points": 0.4400315674561879,
+        "worst radius": 0.45878246971739545,
+        "mean perimeter": 0.405954889554736
+      },
+      "selection_method": "mrmr",
+      "k": 5,
+      "ranking": [
+        {
+          "rank": 1,
+          "feature": "worst concave points",
+          "mi_score": 0.4391958155536113
+        },
+        {
+          "rank": 2,
+          "feature": "worst perimeter",
+          "mi_score": 0.47997338362123587
+        },
+        {
+          "rank": 3,
+          "feature": "mean concave points",
+          "mi_score": 0.4400315674561879
+        },
+        {
+          "rank": 4,
+          "feature": "worst radius",
+          "mi_score": 0.45878246971739545
+        },
+        {
+          "rank": 5,
+          "feature": "mean perimeter",
+          "mi_score": 0.405954889554736
+        }
+      ]
+    },
+    "top_10_mi": {
+      "family": "B",
+      "description": "Top-10 features by Mutual Information (computed on training split, seed=42).",
+      "features": [
+        "worst perimeter",
+        "worst radius",
+        "worst area",
+        "mean concave points",
+        "worst concave points",
+        "mean perimeter",
+        "mean area",
+        "mean concavity",
+        "mean radius",
+        "worst concavity"
+      ],
+      "n_features": 10,
+      "mi_scores": {
+        "worst perimeter": 0.47997338362123587,
+        "worst radius": 0.45878246971739545,
+        "worst area": 0.4481099341464092,
+        "mean concave points": 0.4400315674561879,
+        "worst concave points": 0.4391958155536113,
+        "mean perimeter": 0.405954889554736,
+        "mean area": 0.3712806734643561,
+        "mean concavity": 0.3697352498485529,
+        "mean radius": 0.3688082609253027,
+        "worst concavity": 0.33950537704199113
+      },
+      "selection_method": "mutual_information",
+      "k": 10,
+      "ranking": [
+        {
+          "rank": 1,
+          "feature": "worst perimeter",
+          "mi_score": 0.47997338362123587
+        },
+        {
+          "rank": 2,
+          "feature": "worst radius",
+          "mi_score": 0.45878246971739545
+        },
+        {
+          "rank": 3,
+          "feature": "worst area",
+          "mi_score": 0.4481099341464092
+        },
+        {
+          "rank": 4,
+          "feature": "mean concave points",
+          "mi_score": 0.4400315674561879
+        },
+        {
+          "rank": 5,
+          "feature": "worst concave points",
+          "mi_score": 0.4391958155536113
+        },
+        {
+          "rank": 6,
+          "feature": "mean perimeter",
+          "mi_score": 0.405954889554736
+        },
+        {
+          "rank": 7,
+          "feature": "mean area",
+          "mi_score": 0.3712806734643561
+        },
+        {
+          "rank": 8,
+          "feature": "mean concavity",
+          "mi_score": 0.3697352498485529
+        },
+        {
+          "rank": 9,
+          "feature": "mean radius",
+          "mi_score": 0.3688082609253027
+        },
+        {
+          "rank": 10,
+          "feature": "worst concavity",
+          "mi_score": 0.33950537704199113
+        }
+      ]
+    },
+    "top_10_mrmr": {
+      "family": "B",
+      "description": "Top-10 features by mRMR (Minimum Redundancy Maximum Relevance, greedy MID variant, training split, seed=42).",
+      "features": [
+        "worst concave points",
+        "worst perimeter",
+        "mean concave points",
+        "worst radius",
+        "mean perimeter",
+        "worst area",
+        "mean radius",
+        "worst concavity",
+        "mean area",
+        "mean concavity"
+      ],
+      "n_features": 10,
+      "mi_scores": {
+        "worst concave points": 0.4391958155536113,
+        "worst perimeter": 0.47997338362123587,
+        "mean concave points": 0.4400315674561879,
+        "worst radius": 0.45878246971739545,
+        "mean perimeter": 0.405954889554736,
+        "worst area": 0.4481099341464092,
+        "mean radius": 0.3688082609253027,
+        "worst concavity": 0.33950537704199113,
+        "mean area": 0.3712806734643561,
+        "mean concavity": 0.3697352498485529
+      },
+      "selection_method": "mrmr",
+      "k": 10,
+      "ranking": [
+        {
+          "rank": 1,
+          "feature": "worst concave points",
+          "mi_score": 0.4391958155536113
+        },
+        {
+          "rank": 2,
+          "feature": "worst perimeter",
+          "mi_score": 0.47997338362123587
+        },
+        {
+          "rank": 3,
+          "feature": "mean concave points",
+          "mi_score": 0.4400315674561879
+        },
+        {
+          "rank": 4,
+          "feature": "worst radius",
+          "mi_score": 0.45878246971739545
+        },
+        {
+          "rank": 5,
+          "feature": "mean perimeter",
+          "mi_score": 0.405954889554736
+        },
+        {
+          "rank": 6,
+          "feature": "worst area",
+          "mi_score": 0.4481099341464092
+        },
+        {
+          "rank": 7,
+          "feature": "mean radius",
+          "mi_score": 0.3688082609253027
+        },
+        {
+          "rank": 8,
+          "feature": "worst concavity",
+          "mi_score": 0.33950537704199113
+        },
+        {
+          "rank": 9,
+          "feature": "mean area",
+          "mi_score": 0.3712806734643561
+        },
+        {
+          "rank": 10,
+          "feature": "mean concavity",
+          "mi_score": 0.3697352498485529
+        }
+      ]
+    },
+    "top_15_mi": {
+      "family": "B",
+      "description": "Top-15 features by Mutual Information (computed on training split, seed=42).",
+      "features": [
+        "worst perimeter",
+        "worst radius",
+        "worst area",
+        "mean concave points",
+        "worst concave points",
+        "mean perimeter",
+        "mean area",
+        "mean concavity",
+        "mean radius",
+        "worst concavity",
+        "area error",
+        "worst compactness",
+        "mean compactness",
+        "radius error",
+        "perimeter error"
+      ],
+      "n_features": 15,
+      "mi_scores": {
+        "worst perimeter": 0.47997338362123587,
+        "worst radius": 0.45878246971739545,
+        "worst area": 0.4481099341464092,
+        "mean concave points": 0.4400315674561879,
+        "worst concave points": 0.4391958155536113,
+        "mean perimeter": 0.405954889554736,
+        "mean area": 0.3712806734643561,
+        "mean concavity": 0.3697352498485529,
+        "mean radius": 0.3688082609253027,
+        "worst concavity": 0.33950537704199113,
+        "area error": 0.33628407674980854,
+        "worst compactness": 0.25975186546642615,
+        "mean compactness": 0.22934198348537382,
+        "radius error": 0.22674437001756487,
+        "perimeter error": 0.21192846235935092
+      },
+      "selection_method": "mutual_information",
+      "k": 15,
+      "ranking": [
+        {
+          "rank": 1,
+          "feature": "worst perimeter",
+          "mi_score": 0.47997338362123587
+        },
+        {
+          "rank": 2,
+          "feature": "worst radius",
+          "mi_score": 0.45878246971739545
+        },
+        {
+          "rank": 3,
+          "feature": "worst area",
+          "mi_score": 0.4481099341464092
+        },
+        {
+          "rank": 4,
+          "feature": "mean concave points",
+          "mi_score": 0.4400315674561879
+        },
+        {
+          "rank": 5,
+          "feature": "worst concave points",
+          "mi_score": 0.4391958155536113
+        },
+        {
+          "rank": 6,
+          "feature": "mean perimeter",
+          "mi_score": 0.405954889554736
+        },
+        {
+          "rank": 7,
+          "feature": "mean area",
+          "mi_score": 0.3712806734643561
+        },
+        {
+          "rank": 8,
+          "feature": "mean concavity",
+          "mi_score": 0.3697352498485529
+        },
+        {
+          "rank": 9,
+          "feature": "mean radius",
+          "mi_score": 0.3688082609253027
+        },
+        {
+          "rank": 10,
+          "feature": "worst concavity",
+          "mi_score": 0.33950537704199113
+        },
+        {
+          "rank": 11,
+          "feature": "area error",
+          "mi_score": 0.33628407674980854
+        },
+        {
+          "rank": 12,
+          "feature": "worst compactness",
+          "mi_score": 0.25975186546642615
+        },
+        {
+          "rank": 13,
+          "feature": "mean compactness",
+          "mi_score": 0.22934198348537382
+        },
+        {
+          "rank": 14,
+          "feature": "radius error",
+          "mi_score": 0.22674437001756487
+        },
+        {
+          "rank": 15,
+          "feature": "perimeter error",
+          "mi_score": 0.21192846235935092
+        }
+      ]
+    },
+    "top_15_mrmr": {
+      "family": "B",
+      "description": "Top-15 features by mRMR (Minimum Redundancy Maximum Relevance, greedy MID variant, training split, seed=42).",
+      "features": [
+        "worst concave points",
+        "worst perimeter",
+        "mean concave points",
+        "worst radius",
+        "mean perimeter",
+        "worst area",
+        "mean radius",
+        "worst concavity",
+        "mean area",
+        "mean concavity",
+        "worst compactness",
+        "area error",
+        "mean compactness",
+        "radius error",
+        "worst texture"
+      ],
+      "n_features": 15,
+      "mi_scores": {
+        "worst concave points": 0.4391958155536113,
+        "worst perimeter": 0.47997338362123587,
+        "mean concave points": 0.4400315674561879,
+        "worst radius": 0.45878246971739545,
+        "mean perimeter": 0.405954889554736,
+        "worst area": 0.4481099341464092,
+        "mean radius": 0.3688082609253027,
+        "worst concavity": 0.33950537704199113,
+        "mean area": 0.3712806734643561,
+        "mean concavity": 0.3697352498485529,
+        "worst compactness": 0.25975186546642615,
+        "area error": 0.33628407674980854,
+        "mean compactness": 0.22934198348537382,
+        "radius error": 0.22674437001756487,
+        "worst texture": 0.13040466592213407
+      },
+      "selection_method": "mrmr",
+      "k": 15,
+      "ranking": [
+        {
+          "rank": 1,
+          "feature": "worst concave points",
+          "mi_score": 0.4391958155536113
+        },
+        {
+          "rank": 2,
+          "feature": "worst perimeter",
+          "mi_score": 0.47997338362123587
+        },
+        {
+          "rank": 3,
+          "feature": "mean concave points",
+          "mi_score": 0.4400315674561879
+        },
+        {
+          "rank": 4,
+          "feature": "worst radius",
+          "mi_score": 0.45878246971739545
+        },
+        {
+          "rank": 5,
+          "feature": "mean perimeter",
+          "mi_score": 0.405954889554736
+        },
+        {
+          "rank": 6,
+          "feature": "worst area",
+          "mi_score": 0.4481099341464092
+        },
+        {
+          "rank": 7,
+          "feature": "mean radius",
+          "mi_score": 0.3688082609253027
+        },
+        {
+          "rank": 8,
+          "feature": "worst concavity",
+          "mi_score": 0.33950537704199113
+        },
+        {
+          "rank": 9,
+          "feature": "mean area",
+          "mi_score": 0.3712806734643561
+        },
+        {
+          "rank": 10,
+          "feature": "mean concavity",
+          "mi_score": 0.3697352498485529
+        },
+        {
+          "rank": 11,
+          "feature": "worst compactness",
+          "mi_score": 0.25975186546642615
+        },
+        {
+          "rank": 12,
+          "feature": "area error",
+          "mi_score": 0.33628407674980854
+        },
+        {
+          "rank": 13,
+          "feature": "mean compactness",
+          "mi_score": 0.22934198348537382
+        },
+        {
+          "rank": 14,
+          "feature": "radius error",
+          "mi_score": 0.22674437001756487
+        },
+        {
+          "rank": 15,
+          "feature": "worst texture",
+          "mi_score": 0.13040466592213407
+        }
+      ]
+    },
+    "corr_filtered_08": {
+      "family": "C",
+      "description": "Correlation-filtered at |r|>0.8. Within each high-corr pair the feature with lower MI is dropped.",
+      "features": [
+        "mean smoothness",
+        "mean symmetry",
+        "mean fractal dimension",
+        "texture error",
+        "smoothness error",
+        "compactness error",
+        "concavity error",
+        "concave points error",
+        "symmetry error",
+        "fractal dimension error",
+        "worst texture",
+        "worst perimeter",
+        "worst concavity",
+        "worst symmetry",
+        "worst fractal dimension"
+      ],
+      "n_features": 15,
+      "dropped_features": [
+        "area error",
+        "mean area",
+        "mean compactness",
+        "mean concave points",
+        "mean concavity",
+        "mean perimeter",
+        "mean radius",
+        "mean texture",
+        "perimeter error",
+        "radius error",
+        "worst area",
+        "worst compactness",
+        "worst concave points",
+        "worst radius",
+        "worst smoothness"
+      ],
+      "threshold": 0.8,
+      "mi_scores": {
+        "mean smoothness": 0.08692892392558771,
+        "mean symmetry": 0.04713496764711689,
+        "mean fractal dimension": 0.0,
+        "texture error": 0.05865496438833806,
+        "smoothness error": 0.028634483862289173,
+        "compactness error": 0.0682435734074629,
+        "concavity error": 0.17416473838632784,
+        "concave points error": 0.09747548532982231,
+        "symmetry error": 0.026021227630826482,
+        "fractal dimension error": 0.010237881482340283,
+        "worst texture": 0.13040466592213407,
+        "worst perimeter": 0.47997338362123587,
+        "worst concavity": 0.33950537704199113,
+        "worst symmetry": 0.10913448956688954,
+        "worst fractal dimension": 0.06687093920440312
+      },
+      "selection_method": "correlation_filter"
+    },
+    "corr_filtered_09": {
+      "family": "C",
+      "description": "Correlation-filtered at |r|>0.9. Within each high-corr pair the feature with lower MI is dropped.",
+      "features": [
+        "mean smoothness",
+        "mean compactness",
+        "mean concave points",
+        "mean symmetry",
+        "mean fractal dimension",
+        "texture error",
+        "area error",
+        "smoothness error",
+        "compactness error",
+        "concavity error",
+        "concave points error",
+        "symmetry error",
+        "fractal dimension error",
+        "worst texture",
+        "worst perimeter",
+        "worst smoothness",
+        "worst compactness",
+        "worst concavity",
+        "worst symmetry",
+        "worst fractal dimension"
+      ],
+      "n_features": 20,
+      "dropped_features": [
+        "mean area",
+        "mean concavity",
+        "mean perimeter",
+        "mean radius",
+        "mean texture",
+        "perimeter error",
+        "radius error",
+        "worst area",
+        "worst concave points",
+        "worst radius"
+      ],
+      "threshold": 0.9,
+      "mi_scores": {
+        "mean smoothness": 0.08692892392558771,
+        "mean compactness": 0.22934198348537382,
+        "mean concave points": 0.4400315674561879,
+        "mean symmetry": 0.04713496764711689,
+        "mean fractal dimension": 0.0,
+        "texture error": 0.05865496438833806,
+        "area error": 0.33628407674980854,
+        "smoothness error": 0.028634483862289173,
+        "compactness error": 0.0682435734074629,
+        "concavity error": 0.17416473838632784,
+        "concave points error": 0.09747548532982231,
+        "symmetry error": 0.026021227630826482,
+        "fractal dimension error": 0.010237881482340283,
+        "worst texture": 0.13040466592213407,
+        "worst perimeter": 0.47997338362123587,
+        "worst smoothness": 0.06191709153171998,
+        "worst compactness": 0.25975186546642615,
+        "worst concavity": 0.33950537704199113,
+        "worst symmetry": 0.10913448956688954,
+        "worst fractal dimension": 0.06687093920440312
+      },
+      "selection_method": "correlation_filter"
+    },
+    "corr_filtered_095": {
+      "family": "C",
+      "description": "Correlation-filtered at |r|>0.95. Within each high-corr pair the feature with lower MI is dropped.",
+      "features": [
+        "mean texture",
+        "mean smoothness",
+        "mean compactness",
+        "mean concavity",
+        "mean concave points",
+        "mean symmetry",
+        "mean fractal dimension",
+        "texture error",
+        "area error",
+        "smoothness error",
+        "compactness error",
+        "concavity error",
+        "concave points error",
+        "symmetry error",
+        "fractal dimension error",
+        "worst texture",
+        "worst perimeter",
+        "worst smoothness",
+        "worst compactness",
+        "worst concavity",
+        "worst concave points",
+        "worst symmetry",
+        "worst fractal dimension"
+      ],
+      "n_features": 23,
+      "dropped_features": [
+        "mean area",
+        "mean perimeter",
+        "mean radius",
+        "perimeter error",
+        "radius error",
+        "worst area",
+        "worst radius"
+      ],
+      "threshold": 0.95,
+      "mi_scores": {
+        "mean texture": 0.0793869112482597,
+        "mean smoothness": 0.08692892392558771,
+        "mean compactness": 0.22934198348537382,
+        "mean concavity": 0.3697352498485529,
+        "mean concave points": 0.4400315674561879,
+        "mean symmetry": 0.04713496764711689,
+        "mean fractal dimension": 0.0,
+        "texture error": 0.05865496438833806,
+        "area error": 0.33628407674980854,
+        "smoothness error": 0.028634483862289173,
+        "compactness error": 0.0682435734074629,
+        "concavity error": 0.17416473838632784,
+        "concave points error": 0.09747548532982231,
+        "symmetry error": 0.026021227630826482,
+        "fractal dimension error": 0.010237881482340283,
+        "worst texture": 0.13040466592213407,
+        "worst perimeter": 0.47997338362123587,
+        "worst smoothness": 0.06191709153171998,
+        "worst compactness": 0.25975186546642615,
+        "worst concavity": 0.33950537704199113,
+        "worst concave points": 0.4391958155536113,
+        "worst symmetry": 0.10913448956688954,
+        "worst fractal dimension": 0.06687093920440312
+      },
+      "selection_method": "correlation_filter"
+    },
+    "domain_size_shape_mean": {
+      "family": "D",
+      "description": "Mean size/shape: radius, perimeter, area, compactness.",
+      "features": [
+        "mean radius",
+        "mean perimeter",
+        "mean area",
+        "mean compactness"
+      ],
+      "n_features": 4,
+      "mi_scores": {
+        "mean radius": 0.3688082609253027,
+        "mean perimeter": 0.405954889554736,
+        "mean area": 0.3712806734643561,
+        "mean compactness": 0.22934198348537382
+      },
+      "selection_method": "domain_knowledge"
+    },
+    "domain_texture_symmetry": {
+      "family": "D",
+      "description": "Mean texture, symmetry, fractal dimension.",
+      "features": [
+        "mean texture",
+        "mean symmetry",
+        "mean fractal dimension"
+      ],
+      "n_features": 3,
+      "mi_scores": {
+        "mean texture": 0.0793869112482597,
+        "mean symmetry": 0.04713496764711689,
+        "mean fractal dimension": 0.0
+      },
+      "selection_method": "domain_knowledge"
+    },
+    "domain_concavity_mean": {
+      "family": "D",
+      "description": "Mean concavity-related features.",
+      "features": [
+        "mean concavity",
+        "mean concave points",
+        "mean compactness"
+      ],
+      "n_features": 3,
+      "mi_scores": {
+        "mean concavity": 0.3697352498485529,
+        "mean concave points": 0.4400315674561879,
+        "mean compactness": 0.22934198348537382
+      },
+      "selection_method": "domain_knowledge"
+    },
+    "domain_worst_size": {
+      "family": "D",
+      "description": "Worst-case size features.",
+      "features": [
+        "worst radius",
+        "worst perimeter",
+        "worst area",
+        "worst compactness"
+      ],
+      "n_features": 4,
+      "mi_scores": {
+        "worst radius": 0.45878246971739545,
+        "worst perimeter": 0.47997338362123587,
+        "worst area": 0.4481099341464092,
+        "worst compactness": 0.25975186546642615
+      },
+      "selection_method": "domain_knowledge"
+    },
+    "domain_worst_shape": {
+      "family": "D",
+      "description": "Worst-case shape/boundary features.",
+      "features": [
+        "worst concavity",
+        "worst concave points",
+        "worst symmetry",
+        "worst fractal dimension"
+      ],
+      "n_features": 4,
+      "mi_scores": {
+        "worst concavity": 0.33950537704199113,
+        "worst concave points": 0.4391958155536113,
+        "worst symmetry": 0.10913448956688954,
+        "worst fractal dimension": 0.06687093920440312
+      },
+      "selection_method": "domain_knowledge"
+    },
+    "domain_error_features": {
+      "family": "D",
+      "description": "SE (standard error) measurement features.",
+      "features": [
+        "radius error",
+        "perimeter error",
+        "area error",
+        "texture error"
+      ],
+      "n_features": 4,
+      "mi_scores": {
+        "radius error": 0.22674437001756487,
+        "perimeter error": 0.21192846235935092,
+        "area error": 0.33628407674980854,
+        "texture error": 0.05865496438833806
+      },
+      "selection_method": "domain_knowledge"
+    },
+    "domain_core_discriminative": {
+      "family": "D",
+      "description": "Top-5 discriminative features by domain + MI consensus.",
+      "features": [
+        "worst perimeter",
+        "worst area",
+        "worst radius",
+        "mean concave points",
+        "worst concave points"
+      ],
+      "n_features": 5,
+      "mi_scores": {
+        "worst perimeter": 0.47997338362123587,
+        "worst area": 0.4481099341464092,
+        "worst radius": 0.45878246971739545,
+        "mean concave points": 0.4400315674561879,
+        "worst concave points": 0.4391958155536113
+      },
+      "selection_method": "domain_knowledge"
+    },
+    "random_k3_00": {
+      "family": "E",
+      "description": "Random subset #1 of size 3 (control group, seed=45, draw=0).",
+      "features": [
+        "area error",
+        "compactness error",
+        "mean symmetry"
+      ],
+      "n_features": 3,
+      "mi_scores": {
+        "area error": 0.33628407674980854,
+        "compactness error": 0.0682435734074629,
+        "mean symmetry": 0.04713496764711689
+      },
+      "selection_method": "random",
+      "k": 3,
+      "draw_index": 0
+    },
+    "random_k3_01": {
+      "family": "E",
+      "description": "Random subset #2 of size 3 (control group, seed=45, draw=1).",
+      "features": [
+        "mean fractal dimension",
+        "mean perimeter",
+        "mean symmetry"
+      ],
+      "n_features": 3,
+      "mi_scores": {
+        "mean fractal dimension": 0.0,
+        "mean perimeter": 0.405954889554736,
+        "mean symmetry": 0.04713496764711689
+      },
+      "selection_method": "random",
+      "k": 3,
+      "draw_index": 1
+    },
+    "random_k3_02": {
+      "family": "E",
+      "description": "Random subset #3 of size 3 (control group, seed=45, draw=2).",
+      "features": [
+        "mean perimeter",
+        "mean radius",
+        "radius error"
+      ],
+      "n_features": 3,
+      "mi_scores": {
+        "mean perimeter": 0.405954889554736,
+        "mean radius": 0.3688082609253027,
+        "radius error": 0.22674437001756487
+      },
+      "selection_method": "random",
+      "k": 3,
+      "draw_index": 2
+    },
+    "random_k3_03": {
+      "family": "E",
+      "description": "Random subset #4 of size 3 (control group, seed=45, draw=3).",
+      "features": [
+        "compactness error",
+        "mean area",
+        "mean radius"
+      ],
+      "n_features": 3,
+      "mi_scores": {
+        "compactness error": 0.0682435734074629,
+        "mean area": 0.3712806734643561,
+        "mean radius": 0.3688082609253027
+      },
+      "selection_method": "random",
+      "k": 3,
+      "draw_index": 3
+    },
+    "random_k3_04": {
+      "family": "E",
+      "description": "Random subset #5 of size 3 (control group, seed=45, draw=4).",
+      "features": [
+        "mean area",
+        "mean fractal dimension",
+        "worst compactness"
+      ],
+      "n_features": 3,
+      "mi_scores": {
+        "mean area": 0.3712806734643561,
+        "mean fractal dimension": 0.0,
+        "worst compactness": 0.25975186546642615
+      },
+      "selection_method": "random",
+      "k": 3,
+      "draw_index": 4
+    },
+    "random_k3_05": {
+      "family": "E",
+      "description": "Random subset #6 of size 3 (control group, seed=45, draw=5).",
+      "features": [
+        "mean fractal dimension",
+        "worst area",
+        "worst concave points"
+      ],
+      "n_features": 3,
+      "mi_scores": {
+        "mean fractal dimension": 0.0,
+        "worst area": 0.4481099341464092,
+        "worst concave points": 0.4391958155536113
+      },
+      "selection_method": "random",
+      "k": 3,
+      "draw_index": 5
+    },
+    "random_k3_06": {
+      "family": "E",
+      "description": "Random subset #7 of size 3 (control group, seed=45, draw=6).",
+      "features": [
+        "mean texture",
+        "worst radius",
+        "worst symmetry"
+      ],
+      "n_features": 3,
+      "mi_scores": {
+        "mean texture": 0.0793869112482597,
+        "worst radius": 0.45878246971739545,
+        "worst symmetry": 0.10913448956688954
+      },
+      "selection_method": "random",
+      "k": 3,
+      "draw_index": 6
+    },
+    "random_k3_07": {
+      "family": "E",
+      "description": "Random subset #8 of size 3 (control group, seed=45, draw=7).",
+      "features": [
+        "fractal dimension error",
+        "mean perimeter",
+        "mean smoothness"
+      ],
+      "n_features": 3,
+      "mi_scores": {
+        "fractal dimension error": 0.010237881482340283,
+        "mean perimeter": 0.405954889554736,
+        "mean smoothness": 0.08692892392558771
+      },
+      "selection_method": "random",
+      "k": 3,
+      "draw_index": 7
+    },
+    "random_k3_08": {
+      "family": "E",
+      "description": "Random subset #9 of size 3 (control group, seed=45, draw=8).",
+      "features": [
+        "mean symmetry",
+        "worst compactness",
+        "worst symmetry"
+      ],
+      "n_features": 3,
+      "mi_scores": {
+        "mean symmetry": 0.04713496764711689,
+        "worst compactness": 0.25975186546642615,
+        "worst symmetry": 0.10913448956688954
+      },
+      "selection_method": "random",
+      "k": 3,
+      "draw_index": 8
+    },
+    "random_k3_09": {
+      "family": "E",
+      "description": "Random subset #10 of size 3 (control group, seed=45, draw=9).",
+      "features": [
+        "mean concavity",
+        "mean smoothness",
+        "worst area"
+      ],
+      "n_features": 3,
+      "mi_scores": {
+        "mean concavity": 0.3697352498485529,
+        "mean smoothness": 0.08692892392558771,
+        "worst area": 0.4481099341464092
+      },
+      "selection_method": "random",
+      "k": 3,
+      "draw_index": 9
+    },
+    "random_k5_00": {
+      "family": "E",
+      "description": "Random subset #1 of size 5 (control group, seed=47, draw=0).",
+      "features": [
+        "area error",
+        "concave points error",
+        "mean perimeter",
+        "smoothness error",
+        "texture error"
+      ],
+      "n_features": 5,
+      "mi_scores": {
+        "area error": 0.33628407674980854,
+        "concave points error": 0.09747548532982231,
+        "mean perimeter": 0.405954889554736,
+        "smoothness error": 0.028634483862289173,
+        "texture error": 0.05865496438833806
+      },
+      "selection_method": "random",
+      "k": 5,
+      "draw_index": 0
+    },
+    "random_k5_01": {
+      "family": "E",
+      "description": "Random subset #2 of size 5 (control group, seed=47, draw=1).",
+      "features": [
+        "concavity error",
+        "mean symmetry",
+        "perimeter error",
+        "radius error",
+        "symmetry error"
+      ],
+      "n_features": 5,
+      "mi_scores": {
+        "concavity error": 0.17416473838632784,
+        "mean symmetry": 0.04713496764711689,
+        "perimeter error": 0.21192846235935092,
+        "radius error": 0.22674437001756487,
+        "symmetry error": 0.026021227630826482
+      },
+      "selection_method": "random",
+      "k": 5,
+      "draw_index": 1
+    },
+    "random_k5_02": {
+      "family": "E",
+      "description": "Random subset #3 of size 5 (control group, seed=47, draw=2).",
+      "features": [
+        "area error",
+        "fractal dimension error",
+        "mean texture",
+        "perimeter error",
+        "worst compactness"
+      ],
+      "n_features": 5,
+      "mi_scores": {
+        "area error": 0.33628407674980854,
+        "fractal dimension error": 0.010237881482340283,
+        "mean texture": 0.0793869112482597,
+        "perimeter error": 0.21192846235935092,
+        "worst compactness": 0.25975186546642615
+      },
+      "selection_method": "random",
+      "k": 5,
+      "draw_index": 2
+    },
+    "random_k5_03": {
+      "family": "E",
+      "description": "Random subset #4 of size 5 (control group, seed=47, draw=3).",
+      "features": [
+        "mean area",
+        "mean radius",
+        "mean symmetry",
+        "worst compactness",
+        "worst texture"
+      ],
+      "n_features": 5,
+      "mi_scores": {
+        "mean area": 0.3712806734643561,
+        "mean radius": 0.3688082609253027,
+        "mean symmetry": 0.04713496764711689,
+        "worst compactness": 0.25975186546642615,
+        "worst texture": 0.13040466592213407
+      },
+      "selection_method": "random",
+      "k": 5,
+      "draw_index": 3
+    },
+    "random_k5_04": {
+      "family": "E",
+      "description": "Random subset #5 of size 5 (control group, seed=47, draw=4).",
+      "features": [
+        "compactness error",
+        "concave points error",
+        "mean radius",
+        "worst area",
+        "worst fractal dimension"
+      ],
+      "n_features": 5,
+      "mi_scores": {
+        "compactness error": 0.0682435734074629,
+        "concave points error": 0.09747548532982231,
+        "mean radius": 0.3688082609253027,
+        "worst area": 0.4481099341464092,
+        "worst fractal dimension": 0.06687093920440312
+      },
+      "selection_method": "random",
+      "k": 5,
+      "draw_index": 4
+    },
+    "random_k5_05": {
+      "family": "E",
+      "description": "Random subset #6 of size 5 (control group, seed=47, draw=5).",
+      "features": [
+        "area error",
+        "radius error",
+        "symmetry error",
+        "worst concavity",
+        "worst symmetry"
+      ],
+      "n_features": 5,
+      "mi_scores": {
+        "area error": 0.33628407674980854,
+        "radius error": 0.22674437001756487,
+        "symmetry error": 0.026021227630826482,
+        "worst concavity": 0.33950537704199113,
+        "worst symmetry": 0.10913448956688954
+      },
+      "selection_method": "random",
+      "k": 5,
+      "draw_index": 5
+    },
+    "random_k5_06": {
+      "family": "E",
+      "description": "Random subset #7 of size 5 (control group, seed=47, draw=6).",
+      "features": [
+        "concavity error",
+        "mean concave points",
+        "mean texture",
+        "smoothness error",
+        "texture error"
+      ],
+      "n_features": 5,
+      "mi_scores": {
+        "concavity error": 0.17416473838632784,
+        "mean concave points": 0.4400315674561879,
+        "mean texture": 0.0793869112482597,
+        "smoothness error": 0.028634483862289173,
+        "texture error": 0.05865496438833806
+      },
+      "selection_method": "random",
+      "k": 5,
+      "draw_index": 6
+    },
+    "random_k5_07": {
+      "family": "E",
+      "description": "Random subset #8 of size 5 (control group, seed=47, draw=7).",
+      "features": [
+        "concave points error",
+        "fractal dimension error",
+        "radius error",
+        "texture error",
+        "worst perimeter"
+      ],
+      "n_features": 5,
+      "mi_scores": {
+        "concave points error": 0.09747548532982231,
+        "fractal dimension error": 0.010237881482340283,
+        "radius error": 0.22674437001756487,
+        "texture error": 0.05865496438833806,
+        "worst perimeter": 0.47997338362123587
+      },
+      "selection_method": "random",
+      "k": 5,
+      "draw_index": 7
+    },
+    "random_k5_08": {
+      "family": "E",
+      "description": "Random subset #9 of size 5 (control group, seed=47, draw=8).",
+      "features": [
+        "concave points error",
+        "mean concave points",
+        "mean concavity",
+        "symmetry error",
+        "worst smoothness"
+      ],
+      "n_features": 5,
+      "mi_scores": {
+        "concave points error": 0.09747548532982231,
+        "mean concave points": 0.4400315674561879,
+        "mean concavity": 0.3697352498485529,
+        "symmetry error": 0.026021227630826482,
+        "worst smoothness": 0.06191709153171998
+      },
+      "selection_method": "random",
+      "k": 5,
+      "draw_index": 8
+    },
+    "random_k5_09": {
+      "family": "E",
+      "description": "Random subset #10 of size 5 (control group, seed=47, draw=9).",
+      "features": [
+        "mean texture",
+        "worst area",
+        "worst compactness",
+        "worst concavity",
+        "worst fractal dimension"
+      ],
+      "n_features": 5,
+      "mi_scores": {
+        "mean texture": 0.0793869112482597,
+        "worst area": 0.4481099341464092,
+        "worst compactness": 0.25975186546642615,
+        "worst concavity": 0.33950537704199113,
+        "worst fractal dimension": 0.06687093920440312
+      },
+      "selection_method": "random",
+      "k": 5,
+      "draw_index": 9
+    },
+    "random_k10_00": {
+      "family": "E",
+      "description": "Random subset #1 of size 10 (control group, seed=52, draw=0).",
+      "features": [
+        "area error",
+        "compactness error",
+        "concavity error",
+        "mean compactness",
+        "mean smoothness",
+        "mean symmetry",
+        "mean texture",
+        "texture error",
+        "worst area",
+        "worst symmetry"
+      ],
+      "n_features": 10,
+      "mi_scores": {
+        "area error": 0.33628407674980854,
+        "compactness error": 0.0682435734074629,
+        "concavity error": 0.17416473838632784,
+        "mean compactness": 0.22934198348537382,
+        "mean smoothness": 0.08692892392558771,
+        "mean symmetry": 0.04713496764711689,
+        "mean texture": 0.0793869112482597,
+        "texture error": 0.05865496438833806,
+        "worst area": 0.4481099341464092,
+        "worst symmetry": 0.10913448956688954
+      },
+      "selection_method": "random",
+      "k": 10,
+      "draw_index": 0
+    },
+    "random_k10_01": {
+      "family": "E",
+      "description": "Random subset #2 of size 10 (control group, seed=52, draw=1).",
+      "features": [
+        "area error",
+        "concave points error",
+        "mean compactness",
+        "mean radius",
+        "mean texture",
+        "smoothness error",
+        "texture error",
+        "worst compactness",
+        "worst concavity",
+        "worst radius"
+      ],
+      "n_features": 10,
+      "mi_scores": {
+        "area error": 0.33628407674980854,
+        "concave points error": 0.09747548532982231,
+        "mean compactness": 0.22934198348537382,
+        "mean radius": 0.3688082609253027,
+        "mean texture": 0.0793869112482597,
+        "smoothness error": 0.028634483862289173,
+        "texture error": 0.05865496438833806,
+        "worst compactness": 0.25975186546642615,
+        "worst concavity": 0.33950537704199113,
+        "worst radius": 0.45878246971739545
+      },
+      "selection_method": "random",
+      "k": 10,
+      "draw_index": 1
+    },
+    "random_k10_02": {
+      "family": "E",
+      "description": "Random subset #3 of size 10 (control group, seed=52, draw=2).",
+      "features": [
+        "compactness error",
+        "mean compactness",
+        "mean concave points",
+        "mean perimeter",
+        "mean radius",
+        "perimeter error",
+        "smoothness error",
+        "worst concavity",
+        "worst radius",
+        "worst smoothness"
+      ],
+      "n_features": 10,
+      "mi_scores": {
+        "compactness error": 0.0682435734074629,
+        "mean compactness": 0.22934198348537382,
+        "mean concave points": 0.4400315674561879,
+        "mean perimeter": 0.405954889554736,
+        "mean radius": 0.3688082609253027,
+        "perimeter error": 0.21192846235935092,
+        "smoothness error": 0.028634483862289173,
+        "worst concavity": 0.33950537704199113,
+        "worst radius": 0.45878246971739545,
+        "worst smoothness": 0.06191709153171998
+      },
+      "selection_method": "random",
+      "k": 10,
+      "draw_index": 2
+    },
+    "random_k10_03": {
+      "family": "E",
+      "description": "Random subset #4 of size 10 (control group, seed=52, draw=3).",
+      "features": [
+        "area error",
+        "compactness error",
+        "fractal dimension error",
+        "mean area",
+        "mean perimeter",
+        "mean symmetry",
+        "mean texture",
+        "perimeter error",
+        "worst smoothness",
+        "worst symmetry"
+      ],
+      "n_features": 10,
+      "mi_scores": {
+        "area error": 0.33628407674980854,
+        "compactness error": 0.0682435734074629,
+        "fractal dimension error": 0.010237881482340283,
+        "mean area": 0.3712806734643561,
+        "mean perimeter": 0.405954889554736,
+        "mean symmetry": 0.04713496764711689,
+        "mean texture": 0.0793869112482597,
+        "perimeter error": 0.21192846235935092,
+        "worst smoothness": 0.06191709153171998,
+        "worst symmetry": 0.10913448956688954
+      },
+      "selection_method": "random",
+      "k": 10,
+      "draw_index": 3
+    },
+    "random_k10_04": {
+      "family": "E",
+      "description": "Random subset #5 of size 10 (control group, seed=52, draw=4).",
+      "features": [
+        "concave points error",
+        "concavity error",
+        "mean smoothness",
+        "perimeter error",
+        "symmetry error",
+        "texture error",
+        "worst concave points",
+        "worst smoothness",
+        "worst symmetry",
+        "worst texture"
+      ],
+      "n_features": 10,
+      "mi_scores": {
+        "concave points error": 0.09747548532982231,
+        "concavity error": 0.17416473838632784,
+        "mean smoothness": 0.08692892392558771,
+        "perimeter error": 0.21192846235935092,
+        "symmetry error": 0.026021227630826482,
+        "texture error": 0.05865496438833806,
+        "worst concave points": 0.4391958155536113,
+        "worst smoothness": 0.06191709153171998,
+        "worst symmetry": 0.10913448956688954,
+        "worst texture": 0.13040466592213407
+      },
+      "selection_method": "random",
+      "k": 10,
+      "draw_index": 4
+    },
+    "random_k10_05": {
+      "family": "E",
+      "description": "Random subset #6 of size 10 (control group, seed=52, draw=5).",
+      "features": [
+        "area error",
+        "mean compactness",
+        "mean perimeter",
+        "mean symmetry",
+        "radius error",
+        "symmetry error",
+        "worst area",
+        "worst fractal dimension",
+        "worst perimeter",
+        "worst symmetry"
+      ],
+      "n_features": 10,
+      "mi_scores": {
+        "area error": 0.33628407674980854,
+        "mean compactness": 0.22934198348537382,
+        "mean perimeter": 0.405954889554736,
+        "mean symmetry": 0.04713496764711689,
+        "radius error": 0.22674437001756487,
+        "symmetry error": 0.026021227630826482,
+        "worst area": 0.4481099341464092,
+        "worst fractal dimension": 0.06687093920440312,
+        "worst perimeter": 0.47997338362123587,
+        "worst symmetry": 0.10913448956688954
+      },
+      "selection_method": "random",
+      "k": 10,
+      "draw_index": 5
+    },
+    "random_k10_06": {
+      "family": "E",
+      "description": "Random subset #7 of size 10 (control group, seed=52, draw=6).",
+      "features": [
+        "compactness error",
+        "concavity error",
+        "fractal dimension error",
+        "mean concavity",
+        "mean radius",
+        "smoothness error",
+        "worst area",
+        "worst concave points",
+        "worst radius",
+        "worst symmetry"
+      ],
+      "n_features": 10,
+      "mi_scores": {
+        "compactness error": 0.0682435734074629,
+        "concavity error": 0.17416473838632784,
+        "fractal dimension error": 0.010237881482340283,
+        "mean concavity": 0.3697352498485529,
+        "mean radius": 0.3688082609253027,
+        "smoothness error": 0.028634483862289173,
+        "worst area": 0.4481099341464092,
+        "worst concave points": 0.4391958155536113,
+        "worst radius": 0.45878246971739545,
+        "worst symmetry": 0.10913448956688954
+      },
+      "selection_method": "random",
+      "k": 10,
+      "draw_index": 6
+    },
+    "random_k10_07": {
+      "family": "E",
+      "description": "Random subset #8 of size 10 (control group, seed=52, draw=7).",
+      "features": [
+        "fractal dimension error",
+        "mean area",
+        "mean compactness",
+        "mean perimeter",
+        "mean smoothness",
+        "worst area",
+        "worst fractal dimension",
+        "worst radius",
+        "worst smoothness",
+        "worst symmetry"
+      ],
+      "n_features": 10,
+      "mi_scores": {
+        "fractal dimension error": 0.010237881482340283,
+        "mean area": 0.3712806734643561,
+        "mean compactness": 0.22934198348537382,
+        "mean perimeter": 0.405954889554736,
+        "mean smoothness": 0.08692892392558771,
+        "worst area": 0.4481099341464092,
+        "worst fractal dimension": 0.06687093920440312,
+        "worst radius": 0.45878246971739545,
+        "worst smoothness": 0.06191709153171998,
+        "worst symmetry": 0.10913448956688954
+      },
+      "selection_method": "random",
+      "k": 10,
+      "draw_index": 7
+    },
+    "random_k10_08": {
+      "family": "E",
+      "description": "Random subset #9 of size 10 (control group, seed=52, draw=8).",
+      "features": [
+        "area error",
+        "concave points error",
+        "mean compactness",
+        "mean concavity",
+        "mean fractal dimension",
+        "mean perimeter",
+        "symmetry error",
+        "worst concave points",
+        "worst concavity",
+        "worst fractal dimension"
+      ],
+      "n_features": 10,
+      "mi_scores": {
+        "area error": 0.33628407674980854,
+        "concave points error": 0.09747548532982231,
+        "mean compactness": 0.22934198348537382,
+        "mean concavity": 0.3697352498485529,
+        "mean fractal dimension": 0.0,
+        "mean perimeter": 0.405954889554736,
+        "symmetry error": 0.026021227630826482,
+        "worst concave points": 0.4391958155536113,
+        "worst concavity": 0.33950537704199113,
+        "worst fractal dimension": 0.06687093920440312
+      },
+      "selection_method": "random",
+      "k": 10,
+      "draw_index": 8
+    },
+    "random_k10_09": {
+      "family": "E",
+      "description": "Random subset #10 of size 10 (control group, seed=52, draw=9).",
+      "features": [
+        "concavity error",
+        "fractal dimension error",
+        "mean concave points",
+        "mean smoothness",
+        "smoothness error",
+        "symmetry error",
+        "worst concave points",
+        "worst concavity",
+        "worst fractal dimension",
+        "worst symmetry"
+      ],
+      "n_features": 10,
+      "mi_scores": {
+        "concavity error": 0.17416473838632784,
+        "fractal dimension error": 0.010237881482340283,
+        "mean concave points": 0.4400315674561879,
+        "mean smoothness": 0.08692892392558771,
+        "smoothness error": 0.028634483862289173,
+        "symmetry error": 0.026021227630826482,
+        "worst concave points": 0.4391958155536113,
+        "worst concavity": 0.33950537704199113,
+        "worst fractal dimension": 0.06687093920440312,
+        "worst symmetry": 0.10913448956688954
+      },
+      "selection_method": "random",
+      "k": 10,
+      "draw_index": 9
+    },
+    "random_k15_00": {
+      "family": "E",
+      "description": "Random subset #1 of size 15 (control group, seed=57, draw=0).",
+      "features": [
+        "area error",
+        "compactness error",
+        "concavity error",
+        "fractal dimension error",
+        "mean compactness",
+        "mean concave points",
+        "mean fractal dimension",
+        "mean radius",
+        "mean texture",
+        "perimeter error",
+        "radius error",
+        "symmetry error",
+        "texture error",
+        "worst compactness",
+        "worst symmetry"
+      ],
+      "n_features": 15,
+      "mi_scores": {
+        "area error": 0.33628407674980854,
+        "compactness error": 0.0682435734074629,
+        "concavity error": 0.17416473838632784,
+        "fractal dimension error": 0.010237881482340283,
+        "mean compactness": 0.22934198348537382,
+        "mean concave points": 0.4400315674561879,
+        "mean fractal dimension": 0.0,
+        "mean radius": 0.3688082609253027,
+        "mean texture": 0.0793869112482597,
+        "perimeter error": 0.21192846235935092,
+        "radius error": 0.22674437001756487,
+        "symmetry error": 0.026021227630826482,
+        "texture error": 0.05865496438833806,
+        "worst compactness": 0.25975186546642615,
+        "worst symmetry": 0.10913448956688954
+      },
+      "selection_method": "random",
+      "k": 15,
+      "draw_index": 0
+    },
+    "random_k15_01": {
+      "family": "E",
+      "description": "Random subset #2 of size 15 (control group, seed=57, draw=1).",
+      "features": [
+        "compactness error",
+        "concave points error",
+        "fractal dimension error",
+        "mean area",
+        "mean smoothness",
+        "mean symmetry",
+        "perimeter error",
+        "symmetry error",
+        "worst area",
+        "worst compactness",
+        "worst fractal dimension",
+        "worst radius",
+        "worst smoothness",
+        "worst symmetry",
+        "worst texture"
+      ],
+      "n_features": 15,
+      "mi_scores": {
+        "compactness error": 0.0682435734074629,
+        "concave points error": 0.09747548532982231,
+        "fractal dimension error": 0.010237881482340283,
+        "mean area": 0.3712806734643561,
+        "mean smoothness": 0.08692892392558771,
+        "mean symmetry": 0.04713496764711689,
+        "perimeter error": 0.21192846235935092,
+        "symmetry error": 0.026021227630826482,
+        "worst area": 0.4481099341464092,
+        "worst compactness": 0.25975186546642615,
+        "worst fractal dimension": 0.06687093920440312,
+        "worst radius": 0.45878246971739545,
+        "worst smoothness": 0.06191709153171998,
+        "worst symmetry": 0.10913448956688954,
+        "worst texture": 0.13040466592213407
+      },
+      "selection_method": "random",
+      "k": 15,
+      "draw_index": 1
+    },
+    "random_k15_02": {
+      "family": "E",
+      "description": "Random subset #3 of size 15 (control group, seed=57, draw=2).",
+      "features": [
+        "area error",
+        "concave points error",
+        "concavity error",
+        "fractal dimension error",
+        "mean compactness",
+        "mean concave points",
+        "mean smoothness",
+        "symmetry error",
+        "texture error",
+        "worst compactness",
+        "worst concave points",
+        "worst concavity",
+        "worst fractal dimension",
+        "worst perimeter",
+        "worst smoothness"
+      ],
+      "n_features": 15,
+      "mi_scores": {
+        "area error": 0.33628407674980854,
+        "concave points error": 0.09747548532982231,
+        "concavity error": 0.17416473838632784,
+        "fractal dimension error": 0.010237881482340283,
+        "mean compactness": 0.22934198348537382,
+        "mean concave points": 0.4400315674561879,
+        "mean smoothness": 0.08692892392558771,
+        "symmetry error": 0.026021227630826482,
+        "texture error": 0.05865496438833806,
+        "worst compactness": 0.25975186546642615,
+        "worst concave points": 0.4391958155536113,
+        "worst concavity": 0.33950537704199113,
+        "worst fractal dimension": 0.06687093920440312,
+        "worst perimeter": 0.47997338362123587,
+        "worst smoothness": 0.06191709153171998
+      },
+      "selection_method": "random",
+      "k": 15,
+      "draw_index": 2
+    },
+    "random_k15_03": {
+      "family": "E",
+      "description": "Random subset #4 of size 15 (control group, seed=57, draw=3).",
+      "features": [
+        "area error",
+        "fractal dimension error",
+        "mean concavity",
+        "mean radius",
+        "mean symmetry",
+        "mean texture",
+        "perimeter error",
+        "smoothness error",
+        "worst compactness",
+        "worst concave points",
+        "worst concavity",
+        "worst perimeter",
+        "worst radius",
+        "worst symmetry",
+        "worst texture"
+      ],
+      "n_features": 15,
+      "mi_scores": {
+        "area error": 0.33628407674980854,
+        "fractal dimension error": 0.010237881482340283,
+        "mean concavity": 0.3697352498485529,
+        "mean radius": 0.3688082609253027,
+        "mean symmetry": 0.04713496764711689,
+        "mean texture": 0.0793869112482597,
+        "perimeter error": 0.21192846235935092,
+        "smoothness error": 0.028634483862289173,
+        "worst compactness": 0.25975186546642615,
+        "worst concave points": 0.4391958155536113,
+        "worst concavity": 0.33950537704199113,
+        "worst perimeter": 0.47997338362123587,
+        "worst radius": 0.45878246971739545,
+        "worst symmetry": 0.10913448956688954,
+        "worst texture": 0.13040466592213407
+      },
+      "selection_method": "random",
+      "k": 15,
+      "draw_index": 3
+    },
+    "random_k15_04": {
+      "family": "E",
+      "description": "Random subset #5 of size 15 (control group, seed=57, draw=4).",
+      "features": [
+        "concave points error",
+        "concavity error",
+        "fractal dimension error",
+        "mean fractal dimension",
+        "mean radius",
+        "mean texture",
+        "radius error",
+        "smoothness error",
+        "symmetry error",
+        "texture error",
+        "worst concave points",
+        "worst fractal dimension",
+        "worst perimeter",
+        "worst radius",
+        "worst smoothness"
+      ],
+      "n_features": 15,
+      "mi_scores": {
+        "concave points error": 0.09747548532982231,
+        "concavity error": 0.17416473838632784,
+        "fractal dimension error": 0.010237881482340283,
+        "mean fractal dimension": 0.0,
+        "mean radius": 0.3688082609253027,
+        "mean texture": 0.0793869112482597,
+        "radius error": 0.22674437001756487,
+        "smoothness error": 0.028634483862289173,
+        "symmetry error": 0.026021227630826482,
+        "texture error": 0.05865496438833806,
+        "worst concave points": 0.4391958155536113,
+        "worst fractal dimension": 0.06687093920440312,
+        "worst perimeter": 0.47997338362123587,
+        "worst radius": 0.45878246971739545,
+        "worst smoothness": 0.06191709153171998
+      },
+      "selection_method": "random",
+      "k": 15,
+      "draw_index": 4
+    },
+    "random_k15_05": {
+      "family": "E",
+      "description": "Random subset #6 of size 15 (control group, seed=57, draw=5).",
+      "features": [
+        "area error",
+        "compactness error",
+        "fractal dimension error",
+        "mean compactness",
+        "mean radius",
+        "mean smoothness",
+        "mean symmetry",
+        "mean texture",
+        "texture error",
+        "worst concave points",
+        "worst fractal dimension",
+        "worst perimeter",
+        "worst radius",
+        "worst smoothness",
+        "worst texture"
+      ],
+      "n_features": 15,
+      "mi_scores": {
+        "area error": 0.33628407674980854,
+        "compactness error": 0.0682435734074629,
+        "fractal dimension error": 0.010237881482340283,
+        "mean compactness": 0.22934198348537382,
+        "mean radius": 0.3688082609253027,
+        "mean smoothness": 0.08692892392558771,
+        "mean symmetry": 0.04713496764711689,
+        "mean texture": 0.0793869112482597,
+        "texture error": 0.05865496438833806,
+        "worst concave points": 0.4391958155536113,
+        "worst fractal dimension": 0.06687093920440312,
+        "worst perimeter": 0.47997338362123587,
+        "worst radius": 0.45878246971739545,
+        "worst smoothness": 0.06191709153171998,
+        "worst texture": 0.13040466592213407
+      },
+      "selection_method": "random",
+      "k": 15,
+      "draw_index": 5
+    },
+    "random_k15_06": {
+      "family": "E",
+      "description": "Random subset #7 of size 15 (control group, seed=57, draw=6).",
+      "features": [
+        "area error",
+        "mean area",
+        "mean concave points",
+        "mean concavity",
+        "mean radius",
+        "mean smoothness",
+        "mean symmetry",
+        "mean texture",
+        "radius error",
+        "symmetry error",
+        "worst concave points",
+        "worst perimeter",
+        "worst smoothness",
+        "worst symmetry",
+        "worst texture"
+      ],
+      "n_features": 15,
+      "mi_scores": {
+        "area error": 0.33628407674980854,
+        "mean area": 0.3712806734643561,
+        "mean concave points": 0.4400315674561879,
+        "mean concavity": 0.3697352498485529,
+        "mean radius": 0.3688082609253027,
+        "mean smoothness": 0.08692892392558771,
+        "mean symmetry": 0.04713496764711689,
+        "mean texture": 0.0793869112482597,
+        "radius error": 0.22674437001756487,
+        "symmetry error": 0.026021227630826482,
+        "worst concave points": 0.4391958155536113,
+        "worst perimeter": 0.47997338362123587,
+        "worst smoothness": 0.06191709153171998,
+        "worst symmetry": 0.10913448956688954,
+        "worst texture": 0.13040466592213407
+      },
+      "selection_method": "random",
+      "k": 15,
+      "draw_index": 6
+    },
+    "random_k15_07": {
+      "family": "E",
+      "description": "Random subset #8 of size 15 (control group, seed=57, draw=7).",
+      "features": [
+        "concave points error",
+        "fractal dimension error",
+        "mean area",
+        "mean compactness",
+        "mean concave points",
+        "mean perimeter",
+        "mean radius",
+        "mean texture",
+        "smoothness error",
+        "symmetry error",
+        "worst area",
+        "worst concave points",
+        "worst perimeter",
+        "worst symmetry",
+        "worst texture"
+      ],
+      "n_features": 15,
+      "mi_scores": {
+        "concave points error": 0.09747548532982231,
+        "fractal dimension error": 0.010237881482340283,
+        "mean area": 0.3712806734643561,
+        "mean compactness": 0.22934198348537382,
+        "mean concave points": 0.4400315674561879,
+        "mean perimeter": 0.405954889554736,
+        "mean radius": 0.3688082609253027,
+        "mean texture": 0.0793869112482597,
+        "smoothness error": 0.028634483862289173,
+        "symmetry error": 0.026021227630826482,
+        "worst area": 0.4481099341464092,
+        "worst concave points": 0.4391958155536113,
+        "worst perimeter": 0.47997338362123587,
+        "worst symmetry": 0.10913448956688954,
+        "worst texture": 0.13040466592213407
+      },
+      "selection_method": "random",
+      "k": 15,
+      "draw_index": 7
+    },
+    "random_k15_08": {
+      "family": "E",
+      "description": "Random subset #9 of size 15 (control group, seed=57, draw=8).",
+      "features": [
+        "area error",
+        "concave points error",
+        "concavity error",
+        "fractal dimension error",
+        "mean area",
+        "mean compactness",
+        "mean concave points",
+        "mean smoothness",
+        "mean texture",
+        "perimeter error",
+        "smoothness error",
+        "worst compactness",
+        "worst concave points",
+        "worst perimeter",
+        "worst symmetry"
+      ],
+      "n_features": 15,
+      "mi_scores": {
+        "area error": 0.33628407674980854,
+        "concave points error": 0.09747548532982231,
+        "concavity error": 0.17416473838632784,
+        "fractal dimension error": 0.010237881482340283,
+        "mean area": 0.3712806734643561,
+        "mean compactness": 0.22934198348537382,
+        "mean concave points": 0.4400315674561879,
+        "mean smoothness": 0.08692892392558771,
+        "mean texture": 0.0793869112482597,
+        "perimeter error": 0.21192846235935092,
+        "smoothness error": 0.028634483862289173,
+        "worst compactness": 0.25975186546642615,
+        "worst concave points": 0.4391958155536113,
+        "worst perimeter": 0.47997338362123587,
+        "worst symmetry": 0.10913448956688954
+      },
+      "selection_method": "random",
+      "k": 15,
+      "draw_index": 8
+    },
+    "random_k15_09": {
+      "family": "E",
+      "description": "Random subset #10 of size 15 (control group, seed=57, draw=9).",
+      "features": [
+        "compactness error",
+        "mean area",
+        "mean concave points",
+        "mean concavity",
+        "mean radius",
+        "mean smoothness",
+        "mean symmetry",
+        "radius error",
+        "smoothness error",
+        "symmetry error",
+        "texture error",
+        "worst compactness",
+        "worst concavity",
+        "worst smoothness",
+        "worst symmetry"
+      ],
+      "n_features": 15,
+      "mi_scores": {
+        "compactness error": 0.0682435734074629,
+        "mean area": 0.3712806734643561,
+        "mean concave points": 0.4400315674561879,
+        "mean concavity": 0.3697352498485529,
+        "mean radius": 0.3688082609253027,
+        "mean smoothness": 0.08692892392558771,
+        "mean symmetry": 0.04713496764711689,
+        "radius error": 0.22674437001756487,
+        "smoothness error": 0.028634483862289173,
+        "symmetry error": 0.026021227630826482,
+        "texture error": 0.05865496438833806,
+        "worst compactness": 0.25975186546642615,
+        "worst concavity": 0.33950537704199113,
+        "worst smoothness": 0.06191709153171998,
+        "worst symmetry": 0.10913448956688954
+      },
+      "selection_method": "random",
+      "k": 15,
+      "draw_index": 9
+    }
+  },
+  "summary": {
+    "total_subsets": 59,
+    "family_counts": {
+      "A": 1,
+      "B": 8,
+      "C": 3,
+      "D": 7,
+      "E": 40
+    }
+  }
+}
